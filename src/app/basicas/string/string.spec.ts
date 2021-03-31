@@ -16,6 +16,7 @@ describe('Pruebas de Strings', ()=>{
          const resp= mensaje('Edwin');
          
          expect( typeof resp).toBe('string');//La respuesta que esperamos sea un string
+         //Mandamos Edwin y verificamos que sea string
     });
 
     it('Debe retornar un saludo con el nombre enviado', ()=>{
@@ -24,6 +25,7 @@ describe('Pruebas de Strings', ()=>{
         const resp= mensaje(nombre);
         
         expect( resp ).toContain(nombre);// verificar que la respuesta contenga el resp que enviamos
+        //Mandamos Juan y verificamos que el resultado contenga la palabra 'Juan'
    });
     
 

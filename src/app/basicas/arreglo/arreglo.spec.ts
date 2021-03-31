@@ -1,7 +1,7 @@
 import { obtenerRobots } from "./arreglo";
 
-
-describe('Pruebas de arreglos', ()=>{
+//omitir todas las pruebas
+xdescribe('Pruebas de arreglos', ()=>{
 
     it('Debe retornar al menos 3 robots',()=>{
 
@@ -13,7 +13,9 @@ describe('Pruebas de arreglos', ()=>{
         expect(res.length).toBeGreaterThanOrEqual(3);
 
     });
-    it ('Debe de existir MegaMan y Ultron',()=>{
+
+    //Debemos poner una x en el it, para omitir la prueba. y para ignorar todo x en el Describe
+    xit ('Debe de existir MegaMan y Ultron',()=>{
 
         const res = obtenerRobots();
         expect(res).toContain('MegaMan');
